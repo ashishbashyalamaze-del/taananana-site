@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAANANANA | Luxury Banana Leather</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .bg-cream { background-color: #F9F7F2; }
+        .text-earth { color: #3E3B35; }
+        .bg-forest { background-color: #2D3A27; }
+        .btn-gold { background-color: #C5A059; transition: all 0.3s ease; }
+        .btn-gold:hover { background-color: #A68546; transform: translateY(-2px); }
+    </style>
+</head>
+<body class="bg-cream text-earth">
+
+    <nav class="fixed w-full z-50 bg-cream/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-widest text-forest">TAANANANA</div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
+                <a href="#material" class="hover:text-gold-600">The Material</a>
+                <a href="#shop" class="hover:text-gold-600">Collection</a>
+                <a href="#impact" class="hover:text-gold-600">Impact</a>
+            </div>
+            <a href="#shop" class="bg-forest text-white px-6 py-2 text-sm uppercase tracking-tighter rounded-sm">Shop Now</a>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1581553680321-4fffae59fccd?auto=format&fit=crop&q=80" 
+                 class="w-full h-full object-cover opacity-80" alt="Banana Leather Texture">
+            <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl text-white mb-6">Luxury That Grows.</h1>
+            <p class="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light italic">
+                The world's first ultra-durable leather crafted entirely from agricultural banana waste.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#shop" class="btn-gold text-white px-10 py-4 text-sm uppercase tracking-widest font-bold">Discover Collection</a>
+                <a href="#material" class="bg-white/10 backdrop-blur-md text-white border border-white px-10 py-4 text-sm uppercase tracking-widest font-bold hover:bg-white hover:text-forest">The Science</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="material" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <span class="text-gold-600 uppercase tracking-widest text-sm font-bold">Better than Bovine</span>
+                <h2 class="text-4xl mt-4 mb-6 leading-tight">Peel-to-Posh Architecture</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Unlike synthetic leathers made of plastic, TAANANANA utilizes the robust lignocellulosic fibers of the banana stalk. The result is a material that is naturally water-resistant, incredibly light, and has a tensile strength that rivals traditional calfskin.
+                </p>
+                <ul class="space-y-4 text-sm font-semibold">
+                    <li class="flex items-center">✓ 100% Biodegradable Base</li>
+                    <li class="flex items-center">✓ PETA-Approved Vegan</li>
+                    <li class="flex items-center">✓ Water & Scratch Resistant</li>
+                </ul>
+            </div>
+            <div class="bg-forest h-[500px] rounded-lg overflow-hidden relative" data-aos="zoom-in">
+                 <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&q=80" class="w-full h-full object-cover mix-blend-overlay opacity-80" alt="Eco Crafting">
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="bg-white py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl">The Debut Collection</h2>
+            <div class="w-24 h-1 bg-gold-600 mx-auto mt-4"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                <div class="overflow-hidden bg-gray-100 aspect-[4/5] mb-4">
+                    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="text-xl italic">The Musa Tote</h3>
+                <p class="text-gray-500">$345.00</p>
+            </div>
+            <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                <div class="overflow-hidden bg-gray-100 aspect-[4/5] mb-4">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="text-xl italic">Stalk Card Holder</h3>
+                <p class="text-gray-500">$85.00</p>
+            </div>
+            <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                <div class="overflow-hidden bg-gray-100 aspect-[4/5] mb-4">
+                    <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <h3 class="text-xl italic">The Canopy Weekender</h3>
+                <p class="text-gray-500">$520.00</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-forest text-white py-16">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-3xl mb-4">Join the Circular Revolution</h2>
+            <p class="text-gray-400 mb-8">Get exclusive access to Batch 02 drops and our impact reports.</p>
+            <form class="flex flex-col md:flex-row gap-2">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-6 py-4 bg-white/10 border border-white/20 focus:outline-none focus:border-white">
+                <button type="submit" class="btn-gold px-12 py-4 uppercase font-bold text-sm">Subscribe</button>
+            </form>
+            <div class="mt-12 pt-8 border-t border-white/10 text-xs tracking-widest text-gray-500">
+                © 2026 TAANANANA. ALL RIGHTS RESERVED. <br> CRAFTED FROM EARTH.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
