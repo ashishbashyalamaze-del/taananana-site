@@ -1,0 +1,67 @@
+:root {
+    /* Premium Palette from the reference */
+    --primary: #0f172a;
+    --accent: #14b8a6; 
+    --success: #10b981;
+    --danger: #ef4444;
+    --glass: rgba(255, 255, 255, 0.85);
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #020617;
+        --card-bg: #0f172a;
+        --primary: #f8fafc;
+        --glass: rgba(15, 23, 42, 0.9);
+    }
+}
+
+body { 
+    font-family: 'Inter', sans-serif; /* Professional tech font */
+    background: var(--bg); 
+    color: var(--primary); 
+    margin: 0; 
+}
+
+/* Glassmorphism Header */
+header {
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Premium Card Design */
+.product {
+    background: var(--card-bg); 
+    border-radius: 12px; 
+    padding: 0; /* Full-bleed image style */
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.product-info { padding: 20px; }
+
+/* Refined Search Bar */
+#search {
+    background: var(--card-bg);
+    border: 1px solid #e2e8f0;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    border-radius: 8px; /* Squared-off edges look more premium than pills */
+}
+
+#search:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.1);
+}

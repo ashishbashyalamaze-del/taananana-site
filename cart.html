@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart - TAANANANA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content" style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 15px;">
+            <h1 style="font-weight: 700; font-size: 1.5rem; margin:0;">TAANANANA.</h1>
+            <nav>
+                <ul style="display:flex; list-style:none; gap:20px; margin:0;">
+                    <li><a href="index.html" style="text-decoration:none; color:inherit;">Back to Shop</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="max-width: 800px; margin: 40px auto; padding: 20px;">
+        <h2>Shopping Cart</h2>
+        
+        <div id="cart-items"></div>
+
+        <div id="cart-summary" style="margin-top: 20px; border-top: 2px solid #eee; padding-top: 20px;">
+            <p>Subtotal: <span id="subtotal-amount">$0.00</span></p>
+            <p>Discount (15% over $200): <span id="discount-amount">$0.00</span></p>
+            <p>Shipping: <span id="shipping-amount">$0.00</span></p>
+            <hr>
+            <h3>Total: <span id="total-amount">$0.00</span></h3>
+        </div>
+
+        <button id="checkout-btn" style="background: var(--accent, #3b82f6); color: white; padding: 15px; border: none; width: 100%; cursor: pointer; border-radius: 8px; font-weight: bold; margin-top: 20px;">
+            Checkout
+        </button>
+    </main>
+
+    <script src="cart-script.js"></script>
+</body>
+</html>

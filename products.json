@@ -1,0 +1,37 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Classic Denim Jacket",
+            "price": 59.99,
+            "salePrice": 45.00,
+            "category": "Fashion",
+            "image": "images/product1.jpg",
+            "stock": 5,
+            "rating": 4.5,
+            "description": "Premium quality denim with a modern tailored fit."
+        },
+        {
+            "id": 2,
+            "name": "Smart Bluetooth Watch",
+            "price": 129.50,
+            "salePrice": null,
+            "category": "Electronics",
+            "image": "images/product2.jpg",
+            "stock": 2,
+            "rating": 4.8,
+            "description": "High-resolution OLED display with 7-day battery life."
+        },
+        {
+            "id": 3,
+            "name": "Noise-Canceling Pods",
+            "price": 89.99,
+            "salePrice": 75.00,
+            "category": "Electronics",
+            "image": "images/product3.jpg",
+            "stock": 0,
+            "rating": 4.2,
+            "description": "Industry-leading noise cancellation for travel."
+        }
+    ]
+}
